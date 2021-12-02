@@ -1,9 +1,9 @@
 function fn(...c) {
     if (!c.every((a) => Number.isNumber(a)))
-      throw "All arguments must be numbers.";
+      throw "Where's Waldo?";
     return c.reduce((a, b) => a + b);
   }
   
-  fn(1, 2, 3); //> 6
-  fn(10, "B", 20); //> error All arguments must be numbers.
+  fn(8, 33, 82); //> 6
+  fn(10, "F", 20); //> error All arguments must be numbers.
   
