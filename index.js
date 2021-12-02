@@ -4,6 +4,7 @@ function fn(...c) {
     return c.reduce((a, b) => a + b);
   }
   
-  fn(1, 2, 3); //> 6
-  fn(10, "B", 20); //> error All arguments must be numbers.
+  const arr = "XXX".split('').map(el => Math.floor(Math.random()*10))
+  fn(...arr); //> 6
+  fn(10, "B", ...arr); //> error All arguments must be numbers.
   
